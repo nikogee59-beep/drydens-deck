@@ -253,7 +253,7 @@ function renderMemories(){openModal("Memory Shelf","LITTLE THINGS WORTH KEEPING"
 // Questions Between Us — front-end handlers for the shared Deck Q&A sheet.
 function openQuestionExchange(){
   if(!sessionToken){showAccessGate("Use your personal access code to open Questions Between Us.");return}
-  const recipient=currentUserName==="Niko"?"Elizabeth":"Niko";
+  const recipient=currentUserName==="Dryden"?"Elizabeth":"Dryden";
   openModal("Questions Between Us","JUST BETWEEN US",`<p class="intro">Leave a question for the other person. They can answer it here when they're ready; your answers will appear in this shared space.</p>
     <div class="exchange-compose">
       <div class="group"><label class="field-label" for="exchangeRecipient">Leave this question for</label><select id="exchangeRecipient" aria-label="Question recipient"><option value="${recipient}">${recipient}</option></select></div>
